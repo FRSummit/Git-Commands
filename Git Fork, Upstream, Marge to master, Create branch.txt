@@ -1,0 +1,46 @@
+Step 1 - Fork from main repository
+		 >> After this there will be a copy in my own repository as master
+		 
+Step 2 - Clone repository in own machine
+
+Step 3 - Command
+		 >> git remote add upstream https://github.com/... (Main repository link)
+		 >> git remote -v
+		 
+		 >> git fetch upstream master
+		 >> git rebase upstream/master
+		 >> git push origin
+		 >> git stash
+
+Step 4 - Branch Create
+		 >> git checkout -b "Branch_Name"
+
+Step 5 - Change Branch
+		 >> git checkout master (Back to master from another branch)
+		 
+Step 6 - Changes and Commit to git
+		 >> git add .
+		 >> git commit -m "Message"
+		 >> git push --set-upstream origin Branch_Name (Current Branch)
+		 
+Step 7 - New Pull Request and serve to the development team
+		 >> Create pull request from github website
+		 
+Step 8 - After development team marge my dev branch (Dev1) in Project's master branch
+		 New changes will come for me
+		 >> git checkout master
+		 >> git fetch upstream master
+		 >> git rebase upstream/master
+		 >> git push origin
+		 
+Step 9 - Now create new branch and work there
+		 >> git checkout -b "Branch_Name_2" 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
